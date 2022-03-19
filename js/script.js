@@ -7,11 +7,6 @@ const ctx = canvas.getContext("2d");
 
 let pic = new Image(); //user
 pic.src = "img/me.jpeg";
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-canvas.width = pic.width;
-canvas.height = pic.height;
 
 class ASCIIart {
   #imageCellArray = [];
