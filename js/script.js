@@ -2,12 +2,17 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-// const DENSITY_SP = "         .:░▒▓█";
-// const DENSITY = "█▓Ñ@#W$98765543210?!abc;:+=-,._";
+const DENSITY_SP = "         .:░▒▓█";
+const DENSITY = "█▓Ñ@#W$98765543210?!abc;:+=-,._";
 
 let pic = new Image(); //user
 pic.src = "img/me.jpeg";
 
+canvas.width = 500;
+canvas.height = 500;
+
+pic.width = canvas.width;
+pic.height = canvas.height;
 class ASCIIart {
   #imageCellArray = [];
   #density = [];
