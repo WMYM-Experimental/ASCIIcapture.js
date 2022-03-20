@@ -9,8 +9,13 @@
     <!-- style file -->
     <link rel="stylesheet" href="css/style.css">
     <!-- script file -->
-    <script src="js/script.js" defer></script>
+    <script src="js/ascii.js" defer></script>
     <!-- google icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Red+Hat+Mono:wght@300&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- favicon  -->
 </head>
@@ -20,8 +25,9 @@
         <div id="container">
             <canvas id="canvas"></canvas>
             <div id="controls">
-                <label for="resolution" id="resolution-label">Resolution X px</label><br>
-                <input type="range" name="resolution" id="resolution" min="1" max="20" value="10">
+                <label for="resolution" id="resolution-label">Resolution 10(px)</label><br>
+                <input type="range" name="resolution" id="resolution" min="2" max="16" value="10"><br>
+                <input type="file" id="img-input" accept="image/*"><br>
             </div>
         </div>
     </div>
