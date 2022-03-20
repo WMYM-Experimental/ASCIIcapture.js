@@ -58,6 +58,10 @@ label {
   text-transform: uppercase;
   font-weight: 800;
 }
+button {
+  color: #000;
+  text-decoration: none;
+}
 #canvas {
   width: 500px;
   height: 500px;

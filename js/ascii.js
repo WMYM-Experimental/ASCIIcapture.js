@@ -1,15 +1,14 @@
-/* INPUT IMAGE
+//TODO:getting image from user
+const myForm = document.getElementById("form");
 const imgInput = document.getElementById("img-input");
-let img = "";
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const formData = new FormData();
 
-imgInput.addEventListener("change", () => {
-  console.log(imgInput.value);
-  const reader = new FileReader();
-  reader.addEventListener("load", function () {
-    img = reader.result;
-  });
+  console.log(imgInput.files);
+  formData.append("imgInput", imgInput.files[0]);
+  console.log(imgInput.files);
 });
-*/
 
 //variables and DOM manipulations stuff
 const rangeInput = document.getElementById("resolution");
@@ -85,7 +84,7 @@ class ASCIIart {
         let y_cor = j * 4;
         let location = y_cor * this.#pixels.width + x_cor;
 
-        if (this.#pixels.data[location + 3] > 130) {
+        if (this.#pixels.data[location + 3] > 100) {
           let r = this.#pixels.data[location];
           let g = this.#pixels.data[location + 1];
           let b = this.#pixels.data[location + 2];
@@ -95,7 +94,7 @@ class ASCIIart {
           const color = `rgb(${r},${g},${b})`;
           const char = this.#setChar(media);
 
-          if (sumC > 200) {
+          if (sumC > 100) {
             this.#imageCellArray.push(new Cell(i, j, char, color));
           }
         }

@@ -26,8 +26,13 @@
             <canvas id="canvas"></canvas>
             <div id="controls">
                 <label for="resolution" id="resolution-label">Resolution 10(px)</label><br>
-                <input type="range" name="resolution" id="resolution" min="2" max="16" value="10"><br>
-                <input type="file" id="img-input" accept="image/*"><br>
+                <input type="range" name="resolution" id="resolution" min="1" max="16" value="10"><br>
+                <form id="form">
+                    <input type="file" id="img-input" accept="image/*">
+                    <button type="submit" id="btn">
+                        Upload File
+                    </button>
+                </form>
             </div>
         </div>
     </div>
