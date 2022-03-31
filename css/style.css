@@ -68,3 +68,7 @@ button {
   max-width: 90%;
   max-height: 80%;
 }
+#img-input {
+  font-weight: 800;
+  color: #000;
+}

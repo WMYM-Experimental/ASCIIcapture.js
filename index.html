@@ -25,14 +25,13 @@
         <div id="container">
             <canvas id="canvas"></canvas>
             <div id="controls">
-                <label for="resolution" id="resolution-label">Resolution 10(px)</label><br>
-                <input type="range" name="resolution" id="resolution" min="1" max="16" value="10"><br>
-                <form id="form">
-                    <input type="file" id="img-input" accept="image/*">
-                    <button type="submit" id="btn">
-                        Upload File
-                    </button>
-                </form>
+                <label for="resolution" id="resolution-label">Resolution 10(px) <a
+                        href="https://onlinepngtools.com/convert-png-to-base64">Use Base64 Img URL data</a></label><br>
+                <input type="range" name="resolution" id="resolution" min="2" max="16" value="10"><br>
+                <input type="text" id="img-input" name="img-input">
+                <button type="submit" id="btn">
+                    Upload Img64
+                </button>
             </div>
         </div>
     </div>
