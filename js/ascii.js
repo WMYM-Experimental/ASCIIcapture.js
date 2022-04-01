@@ -1,9 +1,8 @@
-//TODO:getting image from user
-// const DENSITY_SP = "         .:░▒▓█";
-// const DENSITY = "█▓Ñ@#W$98765543210?!abc;:+=-,._";
 const btn = document.getElementById("btn");
 const imgInput = document.getElementById("img-input");
+
 let newSrc;
+
 btn.addEventListener("click", async function () {
   newSrc = imgInput.value.trim();
   pic.src = await newSrc;
@@ -50,7 +49,8 @@ class ASCIIart {
   }
 
   #setChar(m) {
-    //const DENSITY = "@#W0$wmy?!;:+=-,._";
+    // const ORI_DENSITY = "█▓Ñ@#W$98765543210?!abc;:+=-,._";
+    // const DENSITY = "@#W0$wmy?!;:+=-,._";
     if (m > 252) return "@";
     else if (m > 238) return "#";
     else if (m > 224) return "W";
@@ -112,7 +112,7 @@ class ASCIIart {
 }
 
 rangeInput.addEventListener("change", () => {
-  rangeInputLabel.textContent = `RESOLUTION ${rangeInput.value}(px); Use Base64 Img URL data`;
+  rangeInputLabel.textContent = `RESOLUTION ${rangeInput.value}(px); Use Base64 Img URL input data`;
   resolution = parseInt(rangeInput.value);
   ctx.font = `${resolution}px 'Red Hat Mono', monospace`; //resolution + "px monospace"
   art.setup(resolution);
