@@ -112,7 +112,7 @@ class ASCIIart {
 }
 
 rangeInput.addEventListener("change", () => {
-  rangeInputLabel.textContent = `RESOLUTION ${rangeInput.value}(px); Use Base64 Img URL input data`;
+  rangeInputLabel.innerHTML = `RESOLUTION ${rangeInput.value}(px); <a href="https://onlinepngtools.com/convert-png-to-base64">Use Base64 Img URL input data</a>`;
   resolution = parseInt(rangeInput.value);
   ctx.font = `${resolution}px 'Red Hat Mono', monospace`; //resolution + "px monospace"
   art.setup(resolution);
